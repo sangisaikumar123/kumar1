@@ -10,7 +10,7 @@ RUN apk --no-cache add && \
     adduser isw154 --disabled-password && \
     mkdir -p /opt/app/ && \
     chown -R isw154:isw154 /opt/app/
-COPY /target/avaprojectdemo-0.0.1-SNAPSHOT.jar /opt/app/javaprojectdemo-0.0.1-SNAPSHOT.jar
+COPY /target/javaprojectdemo-0.0.1-SNAPSHOT.jar /opt/app/javaprojectdemo-0.0.1-SNAPSHOT.jar
 
 USER isw154
 WORKDIR /opt/app/
